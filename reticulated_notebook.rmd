@@ -1,0 +1,60 @@
+---
+title: "Modern Workflow"
+subtitle: "Reproducible Research & Literate Learning"
+author:
+- affiliation: School of the Light Touch
+  name: "Pi Prescott"
+date: "`r format(Sys.time(), '%B %d, %Y')`"
+output:
+  pdf_document:
+    citation_package: natbib
+    fig_caption: yes
+    keep_tex: no
+    latex_engine: pdflatex
+    template: latex-ms.tex
+biblio-style: pi-harvard
+fontfamily: mathpazo
+fontsize: 10pt
+geometry: margin=1in
+abstract: "What could you do if you had the time?"
+
+---
+
+
+```{r, "setup", echo=FALSE, include=FALSE}
+
+# load everything up
+
+```
+
+# Let's Begin
+
+\( e^{i\pi} - 1 = 0 \)
+
+A study of the brains of sixteen mathematicians found that the emotional brain (specifically, the medial orbitofrontal cortex, which lights up for beautiful music, poetry, pictures, etc.) lit up more consistently for [Euler's identity](https://en.wikipedia.org/wiki/Euler%27s_identity) than for any other formula.
+
+```{r, "start_here", echo=FALSE, include=FALSE}
+
+library(reticulate)
+use_python("C:\\Python37")
+
+```
+
+```{python "experiment"}
+x = 'hello world'
+y = "3"
+y
+
+```
+```{python}
+z = 1
+
+```
+
+```{r}
+py$y
+```
+
+
+
+# References
